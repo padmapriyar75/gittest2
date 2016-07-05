@@ -1,0 +1,31 @@
+body{
+  margin: 0
+}
+
+.box1{
+  width: 200px;
+  height: 200px;
+  
+  position: relative;
+  background-color: #666;
+  top: 200px;
+}
+
+.box2{
+  width: 200px;
+  height: 400px;
+  margin: auto;
+  position: absolute;
+  background-color: red;
+  top: 200px;
+  left: 20px;
+}
+
+.box3{
+  width: 600px;
+  height:200px;
+  margin: auto;
+  float: left;
+  background-color: green;
+
+}
