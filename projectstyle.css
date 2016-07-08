@@ -1,0 +1,191 @@
+html,body{
+  height: 100%;
+}
+
+/*Hero Unit - css*/
+
+.hero-unit {
+  width: 100%;
+}
+
+.half-col {
+  height: 50%;
+}
+
+.col-1{
+  background: green;
+}
+
+.col-3{
+  background: pink;
+}
+
+.hero-unit,.hero-unit .full-col {
+  height: 100%;
+  float:left;
+}
+
+.col-2 {
+  width: 50%;
+  background: red;
+}
+
+.col-1,.col-3 {
+  width: 25%;
+  }
+
+.half-width {
+  width: 50%;
+}
+
+#backpack {
+  background-image: url('./images/backpack.jpg');
+  position: relative;
+  background-size: cover;
+}
+
+#rucksack {
+  background-image: url('./images/rucksack.jpg');
+  position: relative;
+  background-size: cover;
+    }
+
+.caption {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.caption-text {
+  position: absolute;;
+  bottom: 2%;
+  right:2%;
+  color: whitesmoke;
+  font-family: 'Roboto';
+  font-size: 25px;
+}
+
+.backdrop:hover {
+  background: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  transition-delay: 0.5s;
+  transition: 0.8s all ease-in-out;
+}
+
+.caption:hover ~ .backdrop {
+  background: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  /*transition-delay: 0.5s;*/
+  transition: 0.8s all ease-in-out;
+}
+
+/*End Of Hero Unit - css*/
+
+ul{
+  list-style: none;
+}
+
+.wrap{
+  margin: auto;
+  width: 100%;
+}
+
+.home_page{
+  margin: auto;
+  background-image: image(images/page_background.jpg);
+}
+
+header{
+  width: auto;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  /*margin-top: 20px;*/
+  height: 50px;
+  background:#e3e3e3;
+  font-family: 'Pacifico', cursive;
+  font-size: 16px;
+  color: #1E90FF;
+  }
+
+
+.header_top_left{
+  float: left;
+}
+.header_top_right_outer{
+  float: right;
+  padding-right: 10px;
+
+}
+
+#navitems ul li{
+
+  display: block;
+  list-style: none;
+  padding-right: 50px;
+  height: 50px;
+  padding-top: 10px;
+  float: left;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+
+}
+
+
+
+a{
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+footer{
+  float: left;
+  margin-top: 50px;
+  border-width: 1px;
+  font-family: 'Pacifico', cursive;
+   background-color: #222;
+    min-height: 260px;
+    overflow: hidden;
+    text-align: center;
+    clear: both;
+    position: relative;
+    z-index: 1000;
+}
+
+#footer_allpages{
+  display: block;
+  float: left;
+  padding: 2% 5%;
+  width: 90%;
+}
+
+.hero{
+  height: 400px;
+  margin: auto;
+}
+
+.ul_hm {
+    float: left;
+    text-align: left;
+    width: 16%;
+  }
+
+  .ul_hm li{
+    line-height: 17px;
+  }
+.fhead {
+     font-size: 20px;
+     margin-bottom: 30px;
+
+}
+
+.main{
+  height: 400px;
+}
