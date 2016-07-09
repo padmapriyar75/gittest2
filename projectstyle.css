@@ -12,23 +12,25 @@ html,body{
   height: 50%;
 }
 
-.col-1{
-  background: green;
+#Joey
+{
+    background-image: url('./images/hiking.jpg');
+}
+.col-2 {
+  width: 50%;
 }
 
 .col-3{
   background: pink;
 }
 
+
 .hero-unit,.hero-unit .full-col {
   height: 100%;
   float:left;
 }
 
-.col-2 {
-  width: 50%;
-  background: red;
-}
+
 
 .col-1,.col-3 {
   width: 25%;
@@ -40,15 +42,85 @@ html,body{
 
 #backpack {
   background-image: url('./images/backpack.jpg');
+   position: relative;
+top: 50%;
+transform: translateY(-100%);
+background-size: cover;
+}
+
+#backpack:after {
+    content:' ';
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+}
+#backpack:hover:after {
+    opacity:1;
+}
+
+#Joey {
+  background-image: url('./images/hiking.jpg');
   position: relative;
+top: 50%;
+transform: translateY(-100%);
   background-size: cover;
 }
 
-#rucksack {
-  background-image: url('./images/rucksack.jpg');
-  position: relative;
-  background-size: cover;
-    }
+#Joey{
+    
+ -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+#Joey:hover{
+    -webkit-filter: blur(1px);
+}
+
+#Joey:after {
+    content:' ';
+    display: block;
+    background: url('./images/arrow.png');
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    
+}
+#Joey:hover:after {
+    opacity:1;
+}
+
+#school {
+  background-image: url('./images/rain.jpg');
+   position: relative;
+top: 50%;
+transform: translateY(-100%);
+background-size: cover;
+}
+
+#school:after {
+    content:' ';
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+}
+#school:hover:after {
+    opacity:1;
+}
 
 .caption {
   position: absolute;
@@ -65,25 +137,7 @@ html,body{
   font-size: 25px;
 }
 
-.backdrop:hover {
-  background: black;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.6;
-  transition-delay: 0.5s;
-  transition: 0.8s all ease-in-out;
-}
 
-.caption:hover ~ .backdrop {
-  background: black;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.6;
-  /*transition-delay: 0.5s;*/
-  transition: 0.8s all ease-in-out;
-}
 
 /*End Of Hero Unit - css*/
 
@@ -99,29 +153,6 @@ ul{
 .home_page{
   margin: auto;
   background-image: image(images/page_background.jpg);
-}
-
-header{
-  width: auto;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  /*margin-top: 20px;*/
-  height: 50px;
-  background:#e3e3e3;
-  font-family: 'Pacifico', cursive;
-  font-size: 16px;
-  color: #1E90FF;
-  }
-
-
-.header_top_left{
-  float: left;
-}
-.header_top_right_outer{
-  float: right;
-  padding-right: 10px;
-
 }
 
 #navitems ul li{
